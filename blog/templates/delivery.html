@@ -1,0 +1,10 @@
+{% extends 'main.html' %}
+{% block main_section %}
+    {% for post in news %}
+        <h2>{{ post.delivery_method }}</h2>
+        <p>{{ post.delivery_description }}</p>
+    {% endfor %}
+    <div class="address">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa2194250aec9c35420e9937511b3f76d17d7ad1bdea1711befc3b1ebd416c8c6&amp;width=550&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+{% endblock main_section %}

@@ -1,0 +1,294 @@
+body {
+    font-family: Everlasting;
+    background: #ecebe9 url("../image/фон.png") no-repeat 500px fixed;
+    background-size: 100%;
+}
+h1 {
+    font-family: 'Everlasting', cursive;
+    color: #BA5762;
+    text-align: left;
+    font-size: 500%;
+    margin: 10% 10% auto 1%
+}
+h2 {
+    font-family: 'Everlasting', cursive;
+    color: #BA5762;
+    text-align: center;
+    font-size: 440%;
+    font-weight: normal;
+    margin: 3% 10% auto 1%
+}
+p {
+    font-family: 'Everlasting', cursive;
+    color: #BA5762;
+    font-size: 150%;
+    margin: 2% 40% auto 1%;
+    line-height: 1.5;
+    text-align: left;
+}
+
+nav {
+    overflow: hidden;
+    position: relative;
+    transform: translateX(-90%);
+    width: 100%;
+    transition: all 800ms cubic-bezier(.8, 0, .33, 1);
+}
+
+    nav.nav-open {
+        transform: translateX(0px);
+        background: none;
+    }
+
+    nav .menu-btn {
+        position: absolute;
+        top: 1%;
+        right: 5%;
+        padding: 0;
+        width: 50px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+        nav .menu-btn .line {
+            padding: 0;
+            width: 30px;
+            background: #BA5762;
+            height: 2px;
+            margin: 5px 10px;
+            transition: all 700ms cubic-bezier(.9, 0, .33, 1);
+        }
+
+            nav .menu-btn .line.line--1 {
+                width: 30px;
+                transform: rotate(0) translateY(0);
+            }
+
+                nav .menu-btn .line.line--1.line-cross {
+                    width: 30px;
+                    transform: rotate(45deg) translateY(10px);
+                    background: #BA5762;
+                }
+
+            nav .menu-btn .line.line--2 {
+                width: 25px;
+                transform: translateX(0);
+            }
+
+                nav .menu-btn .line.line--2.line-fade-out {
+                    width: 25px;
+                    transform: translate(30px);
+                    opacity: 0;
+                }
+
+            nav .menu-btn .line.line--3 {
+                width: 20px;
+                transform: rotate(0) translateY(0);
+            }
+
+                nav .menu-btn .line.line--3.line-cross {
+                    width: 30px;
+                    transform: rotate(-45deg) translateY(-10px);
+                    background: #BA5762;
+                }
+
+
+    nav .nav-links {
+        opacity: 0;
+        text-align: right;
+        transition: all 900ms cubic-bezier(.9, 0, .33, 1);
+        margin-right: 50px;
+    }
+
+        nav .nav-links.fade-in {
+            opacity: 1;
+            transform: translateX(-10px);
+        }
+
+        nav .nav-links .link {
+            padding: 10px 80px 0px 0px;
+            text-decoration: none;
+            font-family: 'Everlasting', cursive;
+            color: #BA5762;
+            text-transform: uppercase;
+            font-size: 20pt;
+            transition: all 300ms cubic-bezier(.9, 0, .33, 1);
+        }
+
+nav .nav-links .link:hover {
+   color: #BF1408;
+}
+.button {
+    font-family: 'Everlasting', cursive;
+    border: 1px solid #BA5762;
+    border-radius: 10px;
+    margin: 5% auto auto 30%;
+    line-height: 300%;
+    font-size: 100%;
+    text-decoration: none;
+    color: #BA5762;
+    cursor: pointer;
+}
+.address {
+    margin-left: 50px;
+}
+img {
+    margin-top: 5%;
+    width: 450px;
+    height: 500px;
+    object-fit: cover;
+    margin-left: 30px;
+}
+
+.list {
+    font-family: 'Everlasting', cursive;
+    vertical-align: top;
+    text-align: left;
+    float: left;
+    padding: 22px;
+    margin: 3% 5% auto 0%;
+    line-height: 1.5;
+    color: #95624f;
+    font-size: 130%;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+.social-button {
+    float: right;
+    margin: 150px 80px 0px 0px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    border: none;
+    line-height: 54px;
+    font-size: 27px;
+    text-align: right;
+    color: #BA5762;
+}
+
+    .social-button:hover,
+    .social-button:focus {
+        text-decoration: none !important;
+        text-decoration: none;
+        outline: none;
+        border: none;
+        color: #BA5762;
+    }
+
+.form {
+    display: inline-block;
+    vertical-align: top;
+    width: 500px;
+    padding: 40px;
+    margin: -350px -400px 0px 0px;
+    background: rgba(255,255,255, .5);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+    .form h2 {
+        margin: 0 0 30px;
+        font-family: 'Everlasting', cursive;
+        padding: 0;
+        color: #BA5762;
+        text-align: center;
+    }
+
+    .form .user-box {
+        position: relative;
+    }
+
+.form .user-box input {
+            width: 100%;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #BA5762;
+            margin-bottom: 30px;
+            border: none;
+            border-bottom: 1px solid black;
+            outline: none;
+            background: transparent;
+}
+
+        .form .user-box label {
+            font-family: 'Everlasting', cursive;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #BA5762;
+            pointer-events: none;
+            transition: .5s;
+        }
+
+        .form .user-box input:focus ~ label,
+        .form .user-box input:valid ~ label {
+            top: -20px;
+            left: 0;
+            color: #4A4845;
+            font-family: 'Everlasting', cursive;
+            font-size: 12px;
+        }
+
+    .form form a {
+        font-family: 'Everlasting', cursive;
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        color: #BA5762;
+        font-size: 16px;
+        text-transform: uppercase;
+        transition: .5s;
+        margin-top: 40px;
+        letter-spacing: 4px
+    }
+
+    .form a:hover {
+        background: #BA5762;
+        color: white;
+        border-radius: 5px;
+    }
+
+button {
+    padding: 50px 30px 0px 30px;
+    font-family: 'Everlasting', cursive;
+    color: #BA5762;
+    font-size: 20pt;
+    text-decoration: none;
+    border: none;
+    background: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-text-fill-color: #BA5762;
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: inset 0 0 20px 20px none;
+    font-family: 'Everlasting', cursive;
+}
+p.myDisplay {
+    font-family: 'Everlasting', cursive;
+    color: #BA5762;
+}
+#loading{
+    font-family: 'Everlasting', cursive;
+    color: #BF1408;
+    text-align: right;
+    font-size: 150%;
+    margin: 10% 10% auto 1%
+}
+
+.form-auth {
+    margin-top: 1%;
+}
+
+#sendbtn {
+    cursor: pointer;
+}

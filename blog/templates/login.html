@@ -1,0 +1,20 @@
+{% extends 'main.html' %}
+{% block main_section %}
+
+    <H1>Войти<H1>
+    <div class="form-auth form">
+
+        <form form method="POST" action="/login" class="auth-form">
+            <div class="user-box">
+                <input type="text" id="typeLoginX" name="loginField"/>
+                <label for="loginField">Логин</label>
+            </div>
+            <div class="user-box">
+                <input type="password" id="typePasswordX" name="passField"/>
+                <label for="passField">Пароль</label>
+            </div>
+            <button type="submit" id="sendbtnlog">Войти</button>
+        </form>
+    </div>
+
+{% endblock main_section %}

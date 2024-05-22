@@ -1,0 +1,61 @@
+{% extends 'main.html' %}
+
+{% block contactsFormsJs %}
+<script type="text/javascript" src="{{ url_for('static', filename='js/contactsForms.js')  }}" defer></script>
+{% endblock %}
+
+
+{% block main_section %}
+       <h1>Свяжитесь с нами</h1>
+        <p>Если вам не подошел никакой дизайн из представленных на сайте, то вы можете заказать торт с любым дизайном.
+        Заполните форму и оставьте свои контакты и пожелания.</p>
+    <div class="list">
+        <ul>
+            <li>450000</li>
+            <li>Уфа</li>
+            <li>Карла Маркса 12</li>
+            <li>корпус 6</li>
+        </ul>
+    </div>
+    <div class="list">
+        <ul>
+            <li>a_kaumova@mail.ru</li>
+            <li>nik.zubov.2002@mail.ru</li>
+        </ul>
+    </div>
+    <div class="list">
+        <ul>
+            <li>+79174135034</li>
+            <li>+79869720652</li>
+        </ul>
+    </div>
+
+    <a href="https://vk.com/feed" class="social-button ico-vk-vk"></a>
+    <a href="https://www.youtube.com/" class="social-button ico-youtube"></a>
+    <a href="https://www.whatsapp.com/" class="social-button ico-whatsapp"></a>
+    <div class="form">
+        <p>Обратная связь</p>
+        <form class="contacts-form" action="#">
+            <div class="user-box">
+                <input type="text" id="name" name="fname" required=""/>
+                <label for="Name">Имя</label>
+            </div>
+            <div class="user-box">
+                <input type="text" id="email" name="email" required="" />
+                <label for="Email">E-mail</label>
+            </div>
+            <div class="user-box">
+                <input type="text" id="phone" name="phone" required="" />
+                <label for="Phone">Телефон</label>
+            </div>
+            <div class="user-box">
+                <input type="text" id="message" name="messages" required="" />
+                <label for="Message">Сообщение</label>
+            </div>
+            <button type="submit" onClick=showContent() id="sendbtn">Отправить сообщение</button>
+            <p id="myDisplay"></p>
+
+        </form>
+        <div id="loading" style="display: none">Идет загрузка...</div>
+    </div>
+{% endblock main_section %}
